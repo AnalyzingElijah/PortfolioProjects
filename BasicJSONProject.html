@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--First I created an HTML file to hold and utilize the JSON file-->
+<html>
+<head>
+    <title>JSON Query</title>
+</head>
+<body>
+<!--Next I insert the JSON file as a string-->    
+    <script type="text/javascript">
+        let wealthy=
+        `[
+            {
+                "Name":"Elon Musk",
+                "Net Worth":"$219 B",
+                "Source":"Tesla,SpaceX",
+                "Position":1
+            },
+            {
+                "Name":"Jeff Bezos",
+                "Net Worth":"$158 B",
+                "Source":"Amazon",
+                "Position":2 
+            },
+            {
+                "Name":"Bernard Arnault & Family",
+                "Net Worth":"$129 B",
+                "Source":"LVMH",
+                "Position":3
+            },
+            {
+                "Name":"Bill Gates",
+                "Net Worth":"$129 B",
+                "Source":"Microsoft",
+                "Position":4
+            },
+            {
+                "Name":"Warren Buffett",
+                "Net Worth":"$118 B",
+                "Source":"Berkenshire Hathaway",
+                "Position":5
+            },
+            {
+                "Name":"Larry Page",
+                "Net Worth":"$111 B",
+                "Source":"Google",
+                "Position":6
+            },
+            {
+                "Name":"Sergey Brin",
+                "Net Worth":"$107 B",
+                "Source":"Google",
+                "Position":7
+            },
+            {
+                "Name":"Larry Ellison",
+                "Net Worth":"$106 B",
+                "Source":"Software",
+                "Position":8
+            },
+            {
+                "Name":"Steve Ballmer",
+                "Net Worth":"$91.4 B",
+                "Source":"Microsoft",
+                "Position":9
+            },
+            {
+                "Name":"Mukesh Ambani",
+                "Net Worth":"$90.7 B",
+                "Source":"Diversified",
+                "Position":10
+            }
+        ]`
+
+        console.log(JSON.parse(wealthy)[3].Name)
+
+    </script>
+<!--Last is the console command that turns the JS string into a JS object-->
+<!--Doing this allows us to create small querys to the "JS database"-->
+
+<!--In this case I ask the console for the name of the 3rd entry (which is the 4th name)
+This outputs the name 'Bill Gates'-->
+</body>
+</html>
